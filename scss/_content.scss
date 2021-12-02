@@ -1,0 +1,204 @@
+
+body {
+    background-image: url(../assets/img/background.png);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+a{
+    color: $primary;
+ }
+
+p,li,form,td,th {
+    color: $primary;
+    font-family: $fontMain;
+    @include font-defect(1.5rem,300,0.1rem);  
+    letter-spacing: 0.1rem;
+    line-height: 2.5rem;
+
+}
+h1,h2,h3,h4 {
+    color: $primary;
+    font-family: $fontSecond;
+    font-weight: 300;
+    }
+h1 {
+    font-size: 3rem;
+}
+h2{
+    font-size: 2.5rem;  
+}
+h3 {
+    font-size: 2rem;  
+}
+h4 {
+    font-size: 2rem;  
+}
+ol, ul {     
+    list-style-type: none;
+    list-style-position: inside;
+}
+table {
+    margin: 2rem;
+}
+
+table{
+    th, td {
+        line-height: 2.5rem;
+    padding: 10px;
+    }
+}
+
+form {
+    @include font-defect(1.5rem,300,0.1rem);
+    color: $primary;
+    font-family: $fontMain;
+    letter-spacing: 0.1rem;
+    line-height: 2.5rem;
+    }
+
+/*main*/
+main{
+    margin-top: 3rem;
+    section{
+        article{
+            clear: both ;
+        }
+    }
+}
+
+.centerColumnflex {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.centerDateflex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+}
+.marginSixrem {
+    margin: 4rem;
+}
+.centerColumnflexbio {
+  @extend .centerColumnflex
+}
+
+
+/*clases*/
+.negrita {
+    font-weight: bold;
+}
+.icoSocial {
+    width: 6rem;
+}
+.textLeft {
+    text-align: left; 
+}
+.textRight {
+    text-align: right; 
+}
+.textCenter {
+    text-align: center; 
+}
+.boxWidth { 
+    width: 50%;
+}
+.borderBox {
+    box-sizing: border-box ;
+
+}
+.paddingBox {
+    padding: 2rem;
+
+}
+.borderDouble {
+    border: double 4px $primary;
+padding: 1rem;
+}
+.multimediaFlex {
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-flow: row wrap;
+margin: 2rem 8rem;
+}
+
+/*Grid*/
+.gridFirst {
+    width: 99%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 10vh 60vh 40vh 10vh 20vh;
+    grid-gap: 4rem;
+    grid-template-areas: "headerGrid headerGrid" "portadaGrid PortadaGrid" "maincalendarGrid musicGrid" "newsGrid newsGrid" "footerGrid footerGrid";
+    }
+    .headerGrid {
+        grid-area: headerGrid;
+    }
+    .portadaGrid {
+        grid-area: portadaGrid;
+    }
+    .maincalendarGrid {
+        grid-area: maincalendarGrid;
+    }
+    .musicGrid {
+        grid-area: musicGrid;
+    }
+    .newsGrid {
+        grid-area: newsGrid;
+    }
+    .footerGrid {
+        grid-area: footerGrid;
+    }
+    .justifyItems {
+    justify-items: stretch;
+        }
+    .justifyContent {
+    justify-content: center;
+    height: 80vh;
+    }
+    .alignItems {
+    align-items: stretch;
+    }
+    .columnrowStart-endportada {
+    grid-column: 1/2;
+    }
+    .columnrowStart-endfooter {
+    grid-column: 1/2;
+    }
+
+    @media only screen and (min-width: 768px){
+        body{
+            grid-template-columns: 1, 1fr;
+            grid-template-rows: 10vh 80vh 60vh 40vh 30vh 20vh;
+            grid-template-areas: "headerGrid" "portadaGrid" "maincalendarGrid" "musicGrid" "newsGrid" "footerGrid";
+    }
+    }   
+    @media only screen and (min-width: 1200px){
+    body{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 10vh 60vh 40vh 10vh 20vh;
+        grid-gap: 4rem;
+        grid-template-areas: "headerGrid headerGrid" "portadaGrid PortadaGrid" "maincalendarGrid musicGrid" "newsGrid newsGrid" "footerGrid footerGrid";
+        }
+    }
+
+    
+
+    // main{
+//     margin-top: 3rem;
+// }
+// main section article {
+//     clear: both ;
+// }
+// table th, td {
+//     line-height: 2.5rem;
+//     padding: 10px;
+// }

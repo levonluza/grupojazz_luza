@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sitio web oficial de Recomendados Jazz. Proximas fechas, noticias, videos y música">
+    <meta name="keywords"  content="recomendados, jazz, eventos, swing">
+    <meta name="author" content="Levon Jesús">
+    <meta name="copyright" content="Recomendados Jazz">
+
+    
+    <!--Animate CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Cierra Animate CDN-->
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Cierra Bootstrap CSS -->
+
+    <!-- Mi CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Cierra Mi CSS -->
+    
+    <title>Recomendados Jazz</title>
+
+</head>
+<body>
+    <header>
+        <!-- Inicia Nav -->
+        <nav class="navbar navbar-expand-lg header__navbar--black"  id="botonera">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo_recomendados.webp" alt="logo de la empresa">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link">Galería</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="shows.html">Shows</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="eventos-privados.html">Eventos Privados</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="biografia.html">Biografía</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main>
+        <section class="py-2">
+            <div class="container-fluid">
+                <div class="=row">
+                    <div class="col-md-12 text-center main__heroimage--bg">
+                        <h1 class="negrita">Música para eventos en vivo</h1>
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="assets/img/imagen_heroe_recomendados.webp" class="d-block w-100" alt="banda recomendados jazz">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="assets/img/recomendados_vivo2_carousel.webp" class="d-block w-100" alt="banda recomendados aire libre">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="assets/img/recomendados_vivo3_carousel.webp" class="d-block w-100" alt="recomendados sentados">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                        <video src="assets/videos/recomendados-video-main.mp4" controls muted autoplay></video>
+                    </div>
+                </div>
+            </div>    
+        </section>
+        <section class="py-2">    
+            <div class= "container-fluid">
+                <div class="row">
+                    <article class="col-md-6 text-center main__date--white">                    
+                        <h2>Proximos de shows</h2>
+                        <table border="5px" cellpadding="10px" class= "d-block mx-auto">
+                            <thead>
+                                <tr>
+                                    <th>lugar</th>
+                                    <th>fecha</th>
+                                    <th>setlist</th>
+                                    <th>protocolo</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Buenos aires, Argentina </td>
+                                    <td>20/11/2021</td>
+                                    <td>
+                                        <ol>
+                                            <li>La pantera Rosa</li>
+                                            <li>Adios Muchachos</li>
+                                            <li>In the Mood</li>
+                                        </ol>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>Uso apropiado de barbijo</li>
+                                            <li>Mantener la distancia social</li>
+                                            <li>Llevar alcohol en gel</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Santiago, Chile</td>
+                                    <td>26/11/2021</td>
+                                    <td>
+                                        <ol>
+                                            <li>La pantera Rosa</li>
+                                            <li>Adios Muchachos</li>
+                                            <li>In the Mood</li>
+                                        </ol>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>Uso apropiado de barbijo</li>
+                                            <li>Mantener la distancia social</li>
+                                            <li>Llevar alcohol en gel</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>¡Ademas de multiples shows sorpresa al aire libre!</p>                                                
+                    </article>
+
+                    <article class="col-md-6 text-center main__lastsong--white">
+                        <div class="d-block mx-auto">
+                            <h2>Escucha el ultimo tema</h2>
+                            <audio src="assets/audios/la_cantina.mp3" controls></audio>                                
+                        </div>
+                    </article>    
+                </div>
+            </div>    
+        </section>        
+
+        <section class="py-2">    
+            <div class= "container-fluid">
+                <div class="row">
+                    <article class="col-md-12 text-center main_lastnotice--white">
+                        <h2>Novedades</h2>
+                        <h3>Recomendados revive el espiritu del swing en jazzologia</h3>
+                        <p> Recomendados movio masas en el festival de jazzologia vivido en Palermo, Buenos Aires.
+                            La gente bailo recordando todo el swing de la epoca de esos tiempos en donde el fox trot era el
+                            alma de la fiesta. La gente ademas no dudo de bailar al ritmo del platillo y no faltarón los
+                            bailarines apasionados por el genero que ademas deleitaron con su pasos.
+                        </p>
+                    </article>
+                </div>
+            </div>    
+        </section>      
+    </main>
+
+    <footer class="footerFlexbox">
+        <section class="py-2">    
+            <div class= "container-fluid">
+                <div class="row">
+                    <ul class="col-md-12 text-center footer__icons--sm">
+                        <li>
+                            <a href="https://www.facebook.com/recomendados.jazz" target="_blank">
+                                <img src="assets/img/facebook.svg" alt="icono facebook" class="icoSocial">
+                            </a>
+                        </li>
+                        <li>    
+                            <a href="https://www.youtube.com/" target="_blank">
+                                <img src="assets/img/youtube.svg" alt="icono youtube" class="icoSocial">
+                            </a>
+                        </li>
+                        <li><a href="https://wa.me/<number>">
+                                <img src="assets/img/whatsapp.svg" alt="icono whatsapp" class="icoSocial">
+                            </a>
+                        </li> 
+                    </ul>    
+                </div>
+            </div>    
+        </section>     
+        <section class="py-2 footer__info--white">    
+            <div class= "container-fluid">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h3>buenos aires. Argentina</h3>
+                        <h3>Todos los derechos reservados</h3>
+                    </div>
+                </div>            
+            </div>
+        </section>     
+    </footer>
+
+    <!-- Script Bootstrap CSS -->   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- Cierra Script Bootstrap CSS --> 
+  
+</body>
+</html>

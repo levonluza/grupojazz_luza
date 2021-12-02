@@ -1,0 +1,142 @@
+/*header*/
+
+header{
+    height: 15vh;
+    position: sticky;
+    top: 0;
+    nav{
+        img{
+            width: 10rem;
+            margin-right: 15rem;
+            &:hover{
+                transform: rotateY(360deg);
+                cursor: pointer;
+                transition: transform 2s;
+            }
+        }
+        ul{
+            li{
+                margin-right: 4rem;
+                a{
+                    color: $primary;
+                    font-family: $fontSecond;
+                    font-size: 3rem;
+                    font-weight: 300;
+                    text-decoration:none;
+                    background-image: linear-gradient(currentColor, currentColor);
+                    background-position: 0% 100%;
+                    background-repeat: no-repeat;
+                    background-size: 0% 2px;
+                    transition: background-size .3s;
+
+                }
+            }
+        }
+    }
+}
+
+/*ID*/
+
+#botonera ul li a.active{
+    text-decoration: underline;    
+}
+
+#botonera {
+    background-color: $main;
+    ul{
+        li{
+            a{
+                color: $primary;
+                font-size: 3rem;
+                font-weight: 300;
+                text-decoration:none;
+                background-image: linear-gradient(currentColor, currentColor);
+                background-position: 0% 100%;
+                background-repeat: no-repeat;
+                background-size: 0% 2px;
+                transition: background-size .3s;
+                &:focus{
+                    background-size: 100% 2px;
+                }
+                &:hover{
+                    color: $secondary;
+                    transform: translateY(1rem);
+                    cursor: pointer;
+                    transition: 0.3s;
+                    background-size: 100% 2px;                
+                }
+
+            }
+        }
+    }
+}
+
+/*clases*/
+.encabezadoHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+}
+.encabezadoMenu{
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+// #botonera{
+//     background-color: $main;  
+// }
+// #botonera ul li a {
+//     color: $primary;
+//     font-size: 3rem;
+//     font-weight: 300;
+//     text-decoration:none;
+//     background-image: linear-gradient(currentColor, currentColor);
+//     background-position: 0% 100%;
+//     background-repeat: no-repeat;
+//     background-size: 0% 2px;
+//     transition: background-size .3s;
+// }
+
+
+// #botonera ul li a:hover{
+// color: $secondary;
+// transform: translateY(1rem);
+// cursor: pointer;
+// transition: 0.3s;
+// }
+// #botonera a:hover, a:focus {
+//     background-size: 100% 2px;
+// }
+
+// header {
+//      height: 15vh;
+//      position: sticky;
+//      top: 0;
+// }
+
+// header nav img {
+//         width: 10rem;
+//         margin-right: 15rem;
+// }
+// header nav img:hover {
+//     transform: rotateY(360deg);
+//     cursor: pointer;
+//     transition: transform 2s;
+// }
+// header nav ul li{
+//     margin-right: 4rem;
+// }
+// header nav ul li a {
+//     color: $primary;
+//     font-family: $fontSecond;
+//     font-size: 3rem;
+//     font-weight: 300;
+//     text-decoration:none;
+//     background-image: linear-gradient(currentColor, currentColor);
+//     background-position: 0% 100%;
+//     background-repeat: no-repeat;
+//     background-size: 0% 2px;
+//     transition: background-size .3s;
+// }

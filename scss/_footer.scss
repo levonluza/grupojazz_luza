@@ -1,0 +1,38 @@
+/*footer*/
+footer {
+    clear: both;
+    section{
+        ul{
+            li{
+                list-style-type: none ;
+                display: inline-block;    
+                margin: 1rem;
+                padding-right: 1rem;  
+            }
+        }
+        h3,h4{
+            font-weight:bold ;
+        }
+    }
+}
+/*clases*/
+.footerFlexbox {
+    padding: 1rem;
+    display: flex;
+    background-color: $main;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+// footer {
+//     clear: both;
+// }
+
+// footer section ul li {
+//     list-style-type: none ;
+//     display: inline-block;    
+//     margin: 1rem;
+//     padding-right: 1rem;    
+// }
+
